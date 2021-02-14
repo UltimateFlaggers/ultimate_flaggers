@@ -17,7 +17,7 @@ public class GoalPlace : MonoBehaviour
 		var layerName = LayerMask.LayerToName(other.gameObject.layer);
 		if (layerName == "player")
 		{
-			var playerId = other.gameObject.GetComponent<Player>().PlayerID;
+			var playerId = other.gameObject.GetComponent<Player>().playerId;
 			if (!goalTime.ContainsKey(playerId))
 			{
 				goalTime.Add(playerId, Time.time);

@@ -246,6 +246,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0ff0037a44f1de43bdeab4ad10e4a31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerId: e8ad091e1613310710152
+  playerName: 
+  status: {fileID: 0}
+  attackPrefab: {fileID: 4372830239787941199, guid: 2e6683c04560fc347ba417873bb257c3, type: 3}
 --- !u!114 &2783761248688789781
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -315,6 +319,7 @@ MonoBehaviour:
     slowDownRate: 20
     airControl: 0
     shellOffset: 0
+  IsCanMove: 1
 --- !u!1 &2783761248822282537
 GameObject:
   m_ObjectHideFlags: 0

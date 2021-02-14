@@ -44,9 +44,9 @@ public class Course : MonoBehaviour
 	{
         var playerObject = Instantiate(playerPrefab, characterPos[0], Quaternion.identity);
         var player = playerObject.GetComponent<Player>();
-        CommonData.MyPlayerID = player.PlayerID;
-        CommonData.MyPlayerName = player.PlayerName;
-        players.Add(player.PlayerID, playerObject);
+        CommonData.MyPlayerID = player.playerId;
+        CommonData.MyPlayerName = player.playerName;
+        players.Add(player.playerId, playerObject);
 
     }
 
@@ -54,7 +54,7 @@ public class Course : MonoBehaviour
     public void SetEnemyPrefab(int index)
 	{
         var enemy = new Player();
-        players.Add(enemy.PlayerID, Instantiate(playerPrefab, characterPos[1], Quaternion.identity));
+        players.Add(enemy.playerId, Instantiate(playerPrefab, characterPos[1], Quaternion.identity));
 	}
 
 
