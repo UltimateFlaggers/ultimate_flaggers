@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2783761248683143921}
   - component: {fileID: 2783761248688789783}
   - component: {fileID: 2783761248687715481}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CameraBase
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -179,8 +179,9 @@ GameObject:
   - component: {fileID: 2783761248682782931}
   - component: {fileID: 2783761248685674385}
   - component: {fileID: 2783761248694939473}
+  - component: {fileID: 4404699289909076104}
   - component: {fileID: 2783761248688789781}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -233,6 +234,18 @@ CapsuleCollider:
   m_Height: 1.6
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4404699289909076104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2783761248682749175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0ff0037a44f1de43bdeab4ad10e4a31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &2783761248688789781
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -312,8 +325,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2783761248822282536}
   - component: {fileID: 2783761248822282538}
-  - component: {fileID: 2783761248822282539}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -377,14 +389,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!81 &2783761248822282539
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2783761248822282537}
-  m_Enabled: 1
 --- !u!1 &2783761249084127605
 GameObject:
   m_ObjectHideFlags: 0
@@ -397,7 +401,7 @@ GameObject:
   - component: {fileID: 2783761249084127606}
   - component: {fileID: 2783761249084127607}
   - component: {fileID: 2783761249084127604}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}

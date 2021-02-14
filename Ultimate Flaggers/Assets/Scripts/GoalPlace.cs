@@ -4,15 +4,24 @@ using UnityEngine;
 
 public class GoalPlace : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public Dictionary<string, float> goalTime;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
+	private void Start()
+	{
+		goalTime = new Dictionary<string, float>();
+	}
+
+	private void OnTriggerEnter(Collider other)
+	{
+		var layerName = LayerMask.LayerToName(other.gameObject.layer);
+		if (layerName == "player")
+		{
+			var playerId = other.gameObject.GetComponent<Player>().PlayerID;
+			if (!goalTime.ContainsKey(playerId))
+			{
+				goalTime.Add(playerId, Time.time);
+			}
+		}
+	}
 }
